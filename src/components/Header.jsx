@@ -12,11 +12,11 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">IEEE GHRCEM</span>
             <img
-              className="h-8 w-auto"
-              src="https://cdn.discordapp.com/attachments/799271530328489984/1148599531383046195/image.png"
+              className="h-14 w-auto"
+              src="https://i.imgur.com/ORh1u05_d.webp?maxwidth=760&fidelity=grand"
               alt=""
             />
           </a>
