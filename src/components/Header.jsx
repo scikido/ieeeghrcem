@@ -34,6 +34,7 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
           <a
             href="#events"
+            onClick={() => setMobileMenuOpen(false)}
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Events
@@ -70,20 +71,19 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-primary-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Events</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Logo</span>
               <img
-                className="h-8 w-auto"
-                src="https://cdn.discordapp.com/attachments/799271530328489984/1148599531383046195/image.png"
+                className="h-14 w-auto"
+                src="https://i.imgur.com/ORh1u05_d.webp?maxwidth=760&fidelity=grand"
                 alt=""
               />
             </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -94,24 +94,28 @@ export default function Header() {
               <div className="space-y-2 py-6 ">
                 <a
                   href="#events"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Events
                 </a>
                 <a
                   href="#members"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Members
                 </a>
                 <a
                   href="#about"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Gallery
                 </a>
                 <a
                   href="#about"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
