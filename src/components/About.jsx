@@ -12,7 +12,7 @@ export default function About() {
               worldwide
             </h2>
             <p className="mb-4 font-light">
-              IEEE and its members inspire a global community to innovate for a
+            IEEE and its members inspire a global community to innovate for a
               better tomorrow through highly cited publications, conferences,
               technology standards, and professional and educational activities.
               IEEE is the trusted “voice” for engineering, computing, and
